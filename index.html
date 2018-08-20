@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Quiz Board</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>JavaScript Fun Quiz Board</h1>
+    <label>A simple revision quiz after your JavaScript course, so <span id="cheer">CHEERS!</span></p>
+      <div class="initially-hidden">
+        <p><span class="clickable">Click here</span> to start your Quiz</p>
+      </div>
+      <div class="initially-showing">
+        <div class="well">
+          <h3>Questions</h3>
+          <form>
+            <div class="form-group">
+              <label>1. What elements are used for TRUE or FALSE values in variables?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question1" value="0"> Trigger readers
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question1" value="0"> Conditional statements
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question1" value="5"> Comparison and logical operators
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question1" value="0"> Regular Expressions
+                </label>
+              </div>
+              <label> <span id="q1"></span> </label>
+            </div>
+            <div class="form-group">
+              <label>2. Where is JavaScript placed inside an HTML document or page?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question2" value="0"> The "meta section"
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name=Question2 value="5"> In the "body" and "head" sections
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question2" value="0"> In the "title" section
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question2" value="0"> In the "footer" section
+                </label>
+              </div>
+              <label> <span id="q2"></span> </label>
+            </div>
+            <div class="form-group">
+              <label>3. What is the element called that can continue to execute a block of code as long as the specified
+                conditions are true?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question3" value="0"> Repeater
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question3" value="5"> Loop
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question3" value="0"> Clone
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question3" value="0"> Debugger
+                </label>
+              </div>
+              <label> <span id="q3"></span> </label>
+            </div>
+            <div class="form-group">
+              <label>4. In JavaScript what element is used to manipulate and store text, usually in multiples?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question4" value="0"> Variables
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question4" value="0"> Recorders
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question4" value="5"> Arrays
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question4" value="0"> Strings
+                </label>
+              </div>
+              <label> <span id="q4"></span> </label>
+            </div>
+            <div class="form-group">
+              <label>5. What is the type of loop that continues through a bock of code as long as the specified condition
+                remains TRUE?
+              </label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question5" value="0"> Conditional loop
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question5" value="0"> Else loop
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question5" value="0"> While loop
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question5" value="5"> For loop
+                </label>
+              </div>
+              <label> <span id="q5"></span> </label>
+              <label>6. What is the name of the statement that is used to exit or end a loop?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question6" value="5"> Break statement
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question6" value="0"> Exit statement
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question6" value="0"> Close statement
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="Question6" value="0"> Conditional statement
+                </label>
+              </div>
+              <label> <span id="q6"></span> </label>
+            </div>
+        </div>
+        <input type="submit" value="Submit" class=" btn btn-success">
+        </form>
+      </div>
+  </div>
+  <div class="finalResults">
+    <label><span class="display"></span></label>
+  </div>
+  <button id="reset" class="btn btn-default">Try Again</button>
+  </div>
+  <p id="footnote" align="center"><font face="arial" size="3">Quiz provided by<br>
+  <a href="https://cinston.github.io/Portfolio/">Winston Carlos</a></font></p>  
+</body>
+
+</html>
